@@ -1,4 +1,6 @@
 ---
+- name:
+  meta: clear_host_errors
 - name: "update apt packages."
   become: yes
   apt:
