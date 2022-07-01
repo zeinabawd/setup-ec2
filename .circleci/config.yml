@@ -18,8 +18,9 @@ jobs:
       - run:
           name: Install Ansible
           command: |
-            # apk add --update ansible
-            apt install ansible
+            apk update && apk add --no-cache musl-dev libffi-dev openssl-dev make gcc python python3 py2-pip python-dev
+            pip install cffi
+            apk add --update ansible
       - run:
           name: Run Playbook and Configure server
           command: |
