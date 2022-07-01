@@ -6,6 +6,7 @@
   hosts: all
   user: ubuntu
   become: true
+  gather_facts: false
   become_method: sudo
   become_user: root
   roles:
