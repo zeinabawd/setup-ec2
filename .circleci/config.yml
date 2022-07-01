@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Run Playbook and Configure server
           command: |
-            ansible-playbook -i inventory main-remote.yml -vvvv -c paramiko -u deploy
+            ansible-playbook -i inventory main-remote.yml -vvvv -c paramiko
 
 # Sequential workflow
 workflows:
