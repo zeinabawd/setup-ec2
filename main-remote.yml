@@ -4,6 +4,7 @@
   # hosts: ubuntu
   # Use the public IP if the VM is already created
   hosts: all
+  ignore_unreachable: yes
   user: ubuntu
   become: true
   become_method: sudo
