@@ -23,8 +23,7 @@ jobs:
       - run:
           name: Run Playbook and Configure server
           command: |
-            ansible all -i inventory -m ping
-            # ansible-playbook -i inventory main-remote.yml -vvvv -c paramiko
+            ansible-playbook -i inventory main-remote.yml
 
 # Sequential workflow
 workflows:
